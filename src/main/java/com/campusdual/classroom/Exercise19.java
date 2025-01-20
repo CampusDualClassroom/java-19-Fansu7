@@ -33,8 +33,7 @@ public class Exercise19 {
     }
 
     public static String getTridimensionalString(int[][][] intArrayTri) {
-        int[][] flatMatrix = flatTridimensionalArray(intArrayTri);
-        return getTridimensionalString(intArrayTri, flatMatrix);
+        return getTridimensionalString(intArrayTri, flatTridimensionalArray(intArrayTri));
     }
 
     public static int[][] flatTridimensionalArray(int[][][] intArrayTri) {
